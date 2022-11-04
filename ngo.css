@@ -48,7 +48,7 @@ button , body{
         width:15px;
         background-color: var(--themeRed);
         position:absolute;
-        top:49px;
+        top:57px;
         right:50%;
         left:50%;
         border-radius: 50%;
@@ -70,15 +70,26 @@ position:relative;
     header .conatiner{
         display:flex;
         justify-content: space-between;
+       
+    }
+    header .container nav{
+       position:relative;
+       display:flex;
+       justify-content: space-between;
     }
     
-    header .container .logo{
-    
-        height:75px;   
-    }
+  .logo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    position:relative;
+    top:20px;
+    height:100%;
+   
+  }
     header .container .logo img{
       
-        height:100%;
+
     } 
    
     header nav ul{
@@ -86,6 +97,7 @@ position:relative;
     }
     header nav ul li{
         display:inline-block;
+        padding-left:30px;
     }
     header nav ul li a{
     display:inline-block;
@@ -99,7 +111,7 @@ position:relative;
     transition: 0.3s;
 }
 header nav ul li a:hover{
-    background-color:var(--themeRed);
+    color:var(--themeRed);
 }
 header .container .nav-bar .nav-donate{
     flex-basis:10%;
@@ -126,20 +138,32 @@ header .container .nav-bar .nav-donate{
   0%{
     background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/perfect2.jpg);
   }  
-  20%{
+  10%{
     background-image:linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url(images/perfect.jpg);
   }  
-  40%{
+  20%{
     background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/perfect4.jpg);
   }  
-  60%{
+  30%{
     background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/perfect5.jpg);
   } 
-  80%{
+  40%{
     background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/perfect6.jpg);
   } 
-  100%{
-    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/perfect.jpg);
+  50%{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/perfect\ ngo.jpg);
+  } 
+  60%{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/teen1.avif);
+  } 
+  70%{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/teen2.jpg);
+  } 
+  80%{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/perfect3.jpg);
+  } 
+  90%{
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,url(images/san-jeronimo-de-surco-4030686__340.jpg);
   } 
 }
 .banner h1{
@@ -509,6 +533,59 @@ footer .newsLetterContainer input{
         margin:10px 0;
     }
 }
+
+@media(max-width:1062px){
+    header{
+        width:100%;
+        background-color: rgba(0,0,0,0.6);
+        position:fixed;
+        z-index:2;
+        height:60px;
+       
+    }
+    header nav{
+        position:relative;
+        border:2px solid white;
+        height:30px;
+        width:30px;
+        margin-top:20px;
+        border-radius:5px; 
+        float:right;
+    } 
+    header nav:after{
+top:17px;
+    }
+      header nav:before{
+    top:7px;    
+    }
+      header nav:after , header nav:before{
+       content:"";
+       height:2px;
+       width:17px;
+       background-color:white;
+       display:block;
+       position:absolute;
+        left:5px;
+    }
+    header nav ul{
+        position:absolute;
+        right:-400px;
+        top:53px;
+        transition:0.5s;
+    }
+  
+    header nav:hover ul{
+        right:0;
+    }
+    header nav ul li{
+        display:block;
+    }
+    header nav ul li a{
+        width:300px;
+       
+        background-color:rgba(0,0,0,0.6) ;
+    }
+}
 @media(max-width:1024px){
     .banner{
         background-position-x:45%;
@@ -641,6 +718,24 @@ grid-template-columns: 1fr;
         line-height:24px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
